@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  transition: 0.3s;
+}
+
+/*----------------------------- Hero ----------------------------------------*/
+.hero {
+  height: 100vh;
+  background: url('../ASSETS/hotel1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/*---------------------------------- Dark Mode ----------------------------------*/
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.dark .navbar {
+  background-color: #1e1e1e !important;
+}
+
+/*---------------------------- Amenities -----------------------------------------*/
+.Amenities{
+    height: 80vh;
+    background-color: white;
+}
+.Amenities i {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.Amenities p {
+  font-weight: 500;
+}
