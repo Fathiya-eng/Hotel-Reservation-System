@@ -34,25 +34,166 @@ body {
 }
 
 /*---------------------------------- Dark Mode ----------------------------------*/
-.dark {
-  background-color: #121212;
-  color: white;
+/* ==============================
+   الوضع العادي (Light Mode)
+============================== */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.dark .navbar {
+/* Navbar */
+.navbar {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hero */
+.hero::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+/* Buttons */
+.btn {
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Amenities */
+.Amenities {
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Amenities i {
+  color: #0d6efd;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.Amenities i:hover {
+  transform: scale(1.2);
+  color: #0b5ed7;
+}
+
+/* ==============================
+   الوضع الليلي (Dark Mode)
+============================== */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+.dark-mode .navbar {
   background-color: #1e1e1e !important;
 }
 
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Cards */
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .card .btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Hero overlay أقوى */
+.dark-mode .hero::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Buttons */
+.dark-mode .btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Footer */
+.dark-mode footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode footer a {
+  color: #ffffff;
+}
+
+.dark-mode footer a:hover {
+  color: #0d6efd;
+}
+
+/* Amenities */
+.dark-mode .Amenities {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .Amenities i {
+  color: #0d6efd;
+}
+
+
 /*---------------------------- Amenities -----------------------------------------*/
 .Amenities{
-    height: 80vh;
-    background-color: white;
+    padding: 60px 0;
+    background-color: rgb(230, 230, 230);
 }
 .Amenities i {
   color: #0d6efd;
   margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.Amenities i:hover {
+  transform: scale(1.2);
+  color: #0b5ed7;
 }
 
 .Amenities p {
   font-weight: 500;
+}
+
+/**/
+ /* Footer Icons Hover Effect */
+footer a {
+  color: #ffffff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+  color: #0d6efd; /* لون أزرق متناسق مع موقعك */
+  transform: scale(1.2); /* يكبر أيقونة قليلاً */
+}
+
+/* Footer Text Styling */
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
 }

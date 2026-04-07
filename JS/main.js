@@ -1,30 +1,26 @@
 fetch('./data.json')
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
-    displayRooms(data.rooms.slice(0,3));
-  });
+    const container = document.getElementById("roomsContainer");
 
-function displayRooms(rooms) {
-  let cards = "";
+    // تصفية بعض الغرف إذا أحببت، هنا نأخذ كل الغرف المتاحة
+    const featuredRooms = data.rooms.filter(room => room.available);
 
-  rooms.forEach(room => {
-    cards += `
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-
-          <div style="height:200px;background:#ccc;"></div>
-
-          <div class="card-body">
-            <h5>${room.name}</h5>
-            <span class="badge bg-primary">${room.type}</span>
-            <p>${room.description}</p>
-            <p><strong>$${room.price}/night</strong></p>
+    featuredRooms.forEach(room => {
+      container.innerHTML += `
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./ASSETS/room${room.id}.jpg" class="card-img-top" alt="${room.name}">
+            <div class="card-body">
+              <h5 class="card-title">${room.name}</h5>
+              <span class="badge bg-primary mb-2">${room.type}</span>
+              <p class="card-text">$${room.price} / night</p>
+              <p class="card-text">${room.description}</p>
+              <button class="btn btn-primary book-now" data-id="${room.id}">Book Now</button>
+            </div>
           </div>
-
         </div>
-      </div>
-    `;
-  });
-
-  document.getElementById("roomsContainer").innerHTML = cards;
-}
+      `;
+    });
+  })
+  .catch(error => console.error(error));

@@ -31,28 +31,36 @@
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
                 </ul>
 
                 <!-- Dark Mode Button -->
-                <button id="darkModeToggle" class="btn btn-dark ms-3">🌙</button>
+
+                <button id="darkToggle" class="btn btn-outline-dark ms-3">
+                    <i id="icon" class="fa-solid fa-moon"></i>
+                </button>
             </div>
         </div>
     </nav>
 
     <!------------------------- Hero Section -------------------->
-    <header class="hero text-white d-flex align-items-center">
+    <section class="hero text-white d-flex align-items-center">
         <div class="container text-center">
             <h1>Welcome to StayEase</h1>
             <p>Luxury stays at affordable prices</p>
             <a href="rooms.html" class="btn btn-primary m-2">Explore Rooms</a>
             <a href="booking.html" class="btn btn-outline-light m-2">Book Now</a>
         </div>
-    </header>
+    </section>
 
-     <section class="container py-5">
-  <h2 class="text-center mb-4">Featured Rooms</h2>
-  <div class="row" id="roomsContainer"></div>
+ <!--------------------------- Featured Rooms  ------------------>
+<section class="featured-rooms py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured Rooms</h2>
+    <div class="row" id="roomsContainer">
+      <!-- Cards ستُملأ ديناميكيًا بواسطة JavaScript -->
+    </div>
+  </div>
 </section>
 
     <!------------------------- Amenities ----------------------->
@@ -62,32 +70,32 @@
 
             <div class="row">
 
-                <div class="col-md-4 mb-4">
+                <div class="col-6 col-md-2">
                     <i class="fa-solid fa-person-swimming fa-2x"></i>
                     <p>Pool</p>
                 </div>
 
-                <div class="col-md-4 mb-4">
+                <div class="col-6 col-md-2">
                     <i class="fa-solid fa-wifi fa-2x"></i>
                     <p>Free Wi-Fi</p>
                 </div>
 
-                <div class="col-md-4 mb-4">
+                <div class="col-6 col-md-2">
                     <i class="fa-solid fa-dumbbell fa-2x"></i>
                     <p>Gym</p>
                 </div>
 
-                <div class="col-md-4 mb-4">
+                <div class="col-6 col-md-2">
                     <i class="fa-solid fa-square-parking fa-2x"></i>
                     <p>Parking</p>
                 </div>
 
-                <div class="col-md-4 mb-4">
+                <div class="col-6 col-md-2">
                     <i class="fa-solid fa-utensils fa-2x"></i>
                     <p>Restaurant</p>
                 </div>
 
-                <div class="col-md-4 mb-4">
+                <div class="col-6 col-md-2">
                     <i class="fa-solid fa-bell fa-2x"></i>
                     <p>Room Service</p>
                 </div>
@@ -96,14 +104,35 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-4">
-        <div class="row"></div>
-  <div class="col-md-4 mb-4">
-  <p>Muscat, Oman</p>
-  <p>+968 2400 1111</p>
-  <p>info@stayease.com</p>
-  <p>© 2026 StayEase Hotel</p>
+    <!------------------------- Footer -------------------------->
+<footer class="bg-dark text-white pt-5 pb-3" id="Contact">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <!-- Hotel Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">StayEase Grand Hotel</h5>
+        <p><i class="fa-solid fa-location-dot me-2"></i>Muscat, Oman</p>
+        <p><i class="fa-solid fa-phone me-2"></i>+968 2400 1111</p>
+        <p><i class="fa-solid fa-envelope me-2"></i>info@stayease.com</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5 class="fw-bold">Follow Us</h5>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+        <p>© 2026 StayEase Hotel. All rights reserved.</p>
+        <p>5-Star Hotel</p>
+      </div>
+
+    </div>
   </div>
 </footer>
 

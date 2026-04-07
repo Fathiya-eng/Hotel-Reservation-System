@@ -1,0 +1,48 @@
+<!-- <div id="roomsContainer"></div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rooms</title>
+
+  <!-- Bootstrap -->
+<link rel="stylesheet" href="./CSS/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Our Rooms</h1>
+
+   <div class="row mb-4">
+
+  <!-- Search -->
+  <div class="col-md-4">
+    <input type="text" id="searchInput" class="form-control" placeholder="Search by room name">
+  </div>
+
+  <!-- Type Filter -->
+  <div class="col-md-4">
+    <select id="typeFilter" class="form-select">
+      <option value="">All Types</option>
+      <option value="Single">Single</option>
+      <option value="Double">Double</option>
+      <option value="Suite">Suite</option>
+    </select>
+  </div>
+
+  <!-- Price Filter -->
+  <div class="col-md-4">
+    <label>Max Price: <span id="priceValue">300</span>RO</label>
+    <input type="range" id="priceRange" class="form-range" min="0" max="300" value="300">
+  </div>
+
+</div>
+    
+    <!-- Rooms Container -->
+    <div class="row" id="roomsContainer"></div>
+  </div>
+
+  <script src="./JS/main.js"></script>
+</body>
+</html>
