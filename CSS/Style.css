@@ -197,3 +197,12 @@ footer p {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
+/**/
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

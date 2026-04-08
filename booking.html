@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="./CSS/bootstrap.min.css">
+<!-- CSS -->
+<!-- <link rel="stylesheet" href="./CSS/Style.css"> -->
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .error {
+        color: red;
+        font-size: 0.9rem;
+    }
+    #summary {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Hotel Booking Form</h2>
+
+    <form id="bookingForm">
+
+        <div class="mb-3">
+            <label class="form-label">Guest Name</label>
+            <input type="text" class="form-control" id="name">
+            <div class="error" id="nameError"></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+            <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input type="number" class="form-control" id="phone">
+            <div class="error" id="phoneError"></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Check-in Date</label>
+            <input type="date" class="form-control" id="checkin">
+            <div class="error" id="checkinError"></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Check-out Date</label>
+            <input type="date" class="form-control" id="checkout">
+            <div class="error" id="checkoutError"></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Number of Guests</label>
+            <select class="form-control" id="guests">
+                <option value="">Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+            <div class="error" id="guestsError"></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Special Requests</label>
+            <textarea class="form-control" id="requests"></textarea>
+            <div class="error" id="requestsError"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Book Now</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+
+    </form>
+
+    <!-- Summary -->
+    <div id="summary" class="mt-5 p-4 bg-white shadow rounded">
+        <h4>Booking Summary</h4>
+        <p id="summaryText"></p>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="./JS/main.js"></script>
+
+</body>
+</html>
