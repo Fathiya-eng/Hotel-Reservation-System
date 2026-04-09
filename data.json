@@ -1,33 +1,26 @@
 {
-"rooms": [
-{
-"id": 1,
-"name": "Classic Single",
-"type": "Single",
-"price": 55,
-"available": true,
-"rating": 4.1,
-"description": "A cozy room with a queen bed, work desk, and city view.",
-"amenities": [
-"Wi-Fi",
-"TV",
-"Air Conditioning"
-]
-},
-{
-"id": 2,
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Classic Single",
+      "type": "Single",
+      "price": 55,
+      "available": true,
+      "rating": 4.1,
+      "image": "assets/room1.png",
+      "description": "A cozy room with a queen bed, work desk, and city view.",
+      "amenities": ["Wi-Fi", "TV", "Air Conditioning"]
+    },
+    {
+      "id": 2,
       "name": "Deluxe Double",
       "type": "Double",
       "price": 90,
       "available": true,
       "rating": 4.5,
+      "image": "assets/room2.png",
       "description": "Spacious double room with two queen beds and garden view.",
-      "amenities": [
-        "Wi-Fi",
-        "TV",
-        "Mini Bar",
-        "Bathtub"
-      ]
+      "amenities": ["Wi-Fi", "TV", "Mini Bar", "Bathtub"]
     },
     {
       "id": 3,
@@ -36,14 +29,9 @@
       "price": 180,
       "available": true,
       "rating": 4.8,
+      "image": "assets/room3.png",
       "description": "Luxurious suite with a king bed, lounge area, and sea view.",
-      "amenities": [
-        "Wi-Fi",
-        "TV",
-        "Jacuzzi",
-        "Breakfast Included",
-        "Butler Service"
-      ]
+      "amenities": ["Wi-Fi", "TV", "Jacuzzi", "Breakfast Included", "Butler Service"]
     },
     {
       "id": 4,
@@ -52,11 +40,9 @@
       "price": 40,
       "available": false,
       "rating": 3.9,
+      "image": "assets/room4.png",
       "description": "Affordable compact room ideal for solo business travelers.",
-      "amenities": [
-        "Wi-Fi",
-        "TV"
-      ]
+      "amenities": ["Wi-Fi", "TV"]
     },
     {
       "id": 5,
@@ -65,13 +51,9 @@
       "price": 110,
       "available": true,
       "rating": 4.3,
+      "image": "assets/room5.png",
       "description": "Family-friendly room with bunk beds and pool access.",
-      "amenities": [
-        "Wi-Fi",
-        "TV",
-        "Pool Access",
-        "Crib Available"
-      ]
+      "amenities": ["Wi-Fi", "TV", "Pool Access", "Crib Available"]
     },
     {
       "id": 6,
@@ -80,14 +62,9 @@
       "price": 220,
       "available": false,
       "rating": 4.7,
+      "image": "assets/room6.png",
       "description": "Top-floor suite with panoramic views and private terrace.",
-      "amenities": [
-        "Wi-Fi",
-        "TV",
-        "Jacuzzi",
-        "Private Terrace",
-        "Breakfast & Dinner"
-      ]
+      "amenities": ["Wi-Fi", "TV", "Jacuzzi", "Private Terrace", "Breakfast & Dinner"]
     }
   ],
   "amenities": [

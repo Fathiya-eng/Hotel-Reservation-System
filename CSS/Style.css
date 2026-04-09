@@ -11,7 +11,7 @@ body {
 /*----------------------------- Hero ----------------------------------------*/
 .hero {
   height: 100vh;
-  background: url('../ASSETS/hotel1.png');
+  background: url('../assets/hotel1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -175,19 +175,17 @@ footer {
   font-weight: 500;
 }
 
-/**/
- /* Footer Icons Hover Effect */
+/*----------------------------Footer ------------------------------------------*/
 footer a {
   color: #ffffff;
   transition: color 0.3s, transform 0.3s;
 }
 
 footer a:hover {
-  color: #0d6efd; /* لون أزرق متناسق مع موقعك */
-  transform: scale(1.2); /* يكبر أيقونة قليلاً */
+  color: #0d6efd; 
+  transform: scale(1.2);
 }
 
-/* Footer Text Styling */
 footer h5 {
   font-weight: bold;
   margin-bottom: 1rem;
@@ -197,7 +195,8 @@ footer p {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
-/**/
+
+/*---------------------------------------------------------------------------*/
 
 .card {
   transition: 0.3s;
