@@ -36,7 +36,6 @@ if (container) {
 
       container.innerHTML = cards;
 
-      // Book Now logic
       document.addEventListener("click", function (e) {
         if (e.target.classList.contains("book-now")) {
           const id = e.target.getAttribute("data-id");
@@ -53,7 +52,7 @@ if (container) {
 // ------------------------ Booking Form (booking.html) ------------------------
 const bookingForm = document.getElementById("bookingForm");
 if (bookingForm) {
-  // Set today's date
+ 
   let today = new Date().toISOString().split("T")[0];
   document.getElementById("checkin").min = today;
 
@@ -61,7 +60,7 @@ if (bookingForm) {
     document.getElementById("checkout").min = this.value;
   });
 
-  // Load selected room
+  
   const selectedRoom = JSON.parse(localStorage.getItem("selectedRoom"));
   let roomPrice = selectedRoom ? selectedRoom.price : 50;
 
