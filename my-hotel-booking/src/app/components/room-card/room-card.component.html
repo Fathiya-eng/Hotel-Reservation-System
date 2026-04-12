@@ -1,0 +1,28 @@
+<div class="col-md-4 mb-3">
+  <div class="card shadow-sm p-3">
+     <img [src]="room.image"
+     class="img-fluid mb-2"
+     alt="Room Image">
+
+    <h5>{{ room.name }}</h5>
+
+    <!-- Type Badge with ngSwitch -->
+    <span [ngSwitch]="room.type">
+      <span *ngSwitchCase="'Single'" class="badge bg-primary">Single</span>
+      <span *ngSwitchCase="'Double'" class="badge bg-success">Double</span>
+      <span *ngSwitchCase="'Suite'" class="badge bg-dark">Suite</span>
+      <span *ngSwitchDefault class="badge bg-secondary">Other</span>
+    </span>
+
+    <p class="mt-2">${{ room.price }} / night</p>
+
+    <!-- Availability Badge -->
+    <p *ngIf="!room.available" class="text-danger">Not Available</p>
+
+    <!-- Book Now Button -->
+    <button class="btn btn-primary w-100 mt-2" (click)="onBookNow()">
+      Book Now
+    </button>
+
+  </div>
+</div>

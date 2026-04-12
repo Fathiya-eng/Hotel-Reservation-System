@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Light */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.card {
+  transition: 0.3s;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+:root {
+  --main-color: #0d6efd;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  border: none;
+}

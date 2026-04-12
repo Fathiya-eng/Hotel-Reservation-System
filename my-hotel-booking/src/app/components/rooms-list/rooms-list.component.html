@@ -1,0 +1,26 @@
+<div class="container mt-4">
+
+  <!-- Toggle Show Only Available -->
+  <div class="form-check mb-3">
+    <input
+      type="checkbox"
+      class="form-check-input"
+      id="availableToggle"
+      [(ngModel)]="showAvailableOnly"
+    >
+    <label class="form-check-label" for="availableToggle">
+      Show only available
+    </label>
+  </div>
+
+  <!-- Room Cards -->
+  <div class="row">
+    <app-room-card
+      *ngFor="let room of filteredRooms"
+      [room]="room"
+      (select)="onSelect($event)"
+    >
+    </app-room-card>
+  </div>
+
+</div>
